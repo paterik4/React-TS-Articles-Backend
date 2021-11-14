@@ -6,7 +6,7 @@ import { ArticleEntity } from './article.entity';
 import { Comment } from './comment.entity';
 import { UserEntity } from '../user/user.entity';
 import { FollowsEntity } from '../profile/follows.entity';
-import { CreateArticleDto } from './dto';
+import { CreateArticleDto, CreateCommentDto } from './dto';
 
 import {ArticleRO, ArticlesRO, CommentsRO} from './article.interface';
 const slug = require('slug');
@@ -104,7 +104,7 @@ export class ArticleService {
 		return {article};
 	}
 
-	async addComment(userId: number, slug: string, commentData): Promise<ArticleRO> {
+	async addComment(userId: number, slug: string, commentData: CreateCommentDto): Promise<ArticleRO> {
 		let article = await this.articleRepository.findOne({slug});
 
 		if (!article) {
