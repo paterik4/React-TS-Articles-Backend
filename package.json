@@ -8,7 +8,6 @@
   },
   "scripts": {
     "start": "node index.js",
-    "start:watch": "nodemon",
     "prestart:prod": "tsc",
     "start:prod": "node dist/main.js",
     "test": "jest --config=jest.json",
@@ -40,6 +39,9 @@
     "supertest": "3.0.0",
     "ts-jest": "26.5.5",
     "ts-node": "9.1.1",
+    "deep-extend": ">=0.5.1",
+    "extend": ">=3.0.2",
+    "atob": ">=2.1.0",
     "sqlite3": "5.0.2",
     "swagger-ui-express": "4.1.6",
     "typeorm": "0.2.32",
