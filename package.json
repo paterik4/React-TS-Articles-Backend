@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "prestart:prod": "tsc",
+    "build": "nest build",
     "start:prod": "node dist/main.js",
     "test": "jest --config=jest.json",
     "test:watch": "jest --watch --config=jest.json",
