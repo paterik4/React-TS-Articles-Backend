@@ -1,6 +1,7 @@
 {
   "name": "ui-challenge-backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "Backend for UI challege",
   "main": "index.js",
   "engines": {
