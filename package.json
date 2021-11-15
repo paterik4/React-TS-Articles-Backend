@@ -4,12 +4,12 @@
   "description": "Backend for UI challege",
   "main": "index.js",
   "engines": {
-    "node": "14.7.0"
+    "node": "14.17.0"
   },
   "scripts": {
     "start": "node index.js",
+    "start:watch": "nodemon",
     "prestart:prod": "tsc",
-    "build": "nest build",
     "start:prod": "node dist/main.js",
     "test": "jest --config=jest.json",
     "test:watch": "jest --watch --config=jest.json",
